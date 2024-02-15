@@ -1,32 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
 
-int i = 4;
-    double d = 4.0;
-    string s = "Polyilaro ";
 
-    //Declare second integer, double, and String variables.
-    int secondInteger;
-    double secondDouble;
-    string secondString;
+namespace csharp_assignment
+{
+    class Solution
+    {
+        static void Main(string[] args)
+        {
+            int i = 4;
+            double d = 4.0;
+            string s = "Poly ilaro ";
+            
+// Declare the new integer, double and string.
 
-    // Read and save an integer, double, and String to your variables.
-    Console.println("Enter an integer value");
-    secondInteger =  Convert.ToInt32(Console.ReadLine());
-
-    Console.println("Enter an double value");
-    secondDouble =  Convert.ToDouble(Console.ReadLine());
-
-    Console.println("Enter a string message");
-    secondString =  Console.ReadLine();
+            Console.WriteLine("Enter an integer");
+            string iname = Console.ReadLine();
+            int num1 = int.Parse(iname);
+            
+        
+            Console.WriteLine("Enter a double");
+            string dname = Console.ReadLine();
+            double num2 = double.Parse(dname);
+  
+  
+            Console.WriteLine("Just a complement for FPI; feel free to express yourself ");
+            string sname = Console.ReadLine();
+            
     
-    // Print the sum of both integer variables on a new line.
-    Console.println(i + secondInteger);
+  // Solving Arithemetic operator
+            
+            
+            int sum = i + num1;
+            Console.WriteLine("The integer Sum is = "+ sum);
 
-    // Print the sum of the double variables on a new line.
-    double doubleSum = d + secondDouble;
-    Console.println(Math.Round(doubleSum, 1));
-
-    // Concatenate and print the String variables on a new line
-    // The 's' variable above should be printed first.
-    Console.println(s + secondString); //ssss + bbb = ssssbbb
-
-
+            
+            double sum2 = d + num2;
+            Console.WriteLine("The decimal Sum is = " + sum2);
+            
+            
+            
+    // Print the Final Complement
+            Console.WriteLine("Yes " + s + "would be glad to receive these accolades: " + sname);
+            Console.ReadLine();
+            
+        }
+    }
+}
